@@ -78,7 +78,7 @@ body {
 	  margin: 0 auto;
 } 
 section{
-	padding: 80px 0px
+	padding: 80px 0px;
 		
 }
 
@@ -202,10 +202,6 @@ header{
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 24em) {
-  .section-1{
-    height: 100vh;} }
-
 
 .section-1  .left{ 
   flex: 0 0 40%;
@@ -219,11 +215,40 @@ header{
   height: auto;
 
 }
+@media only screen and (max-width: 31.25rem) {
+  .section-1{
+    height: 100vh;
+    padding: 0px;
+  }}
+
+@media only screen and (max-width: 414px) {
+  .section-1{
+    height: 100vh;
+    padding: 0px;
+  }}
+@media only screen and (max-width: 375px) {
+  .section-1 {
+    height: 100vh; 
+    padding: 0px;} }
+@media only screen and (max-width: 24em) {
+  .section-1{
+    height: 100vh;
+    padding: 0px;} }
+
+    @media only screen and (max-width: 414px) {
+      .right {
+      height: 100vh;} }
+
+      @media only screen and (max-width: 375px) {
+       .section-1  .right,
+      .section-1  .left {
+      height: 100vh;} }
+
 /*-----------------------------*/
 /*---------- Paragraphy -------*/
 /*-----------------------------*/
 .left h1::first-letter{
-  font-size: 10rem;
+  font-size: 6.4rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
@@ -249,11 +274,29 @@ header{
   color: var(--color-secondary);
   margin: 30px 0px 0px 8px;}
 
+  @media only screen and (max-width: 414px) {
+  .left p {
+    margin: 10px 0 10px 0;} }
+    @media only screen and (max-width: 375px) {
+      .left p {
+        margin: 10px 0 10px 0;} }
+
 button {
   margin: 30px 0px 0px 8px;
   border: 1px solid rgb(0, 60, 128);
   
 }
+
+@media only screen and (max-width: 414px) {
+  button {
+  height: auto;
+  margin: 0;} }
+
+  @media only screen and (max-width: 375px) {
+    button {
+    height: auto;
+    margin: 0;} }
+
 .button {
   padding: 2rem 10rem;
   font-family: 'Montserrat', sans-serif;
@@ -274,6 +317,8 @@ button {
 
 }
 
+
+  
 
 /*-----------------------------*/
 .section-1  .right{ 
@@ -312,21 +357,41 @@ button {
       padding: 2rem;
       }
     }
+    @media only screen and (max-width: 31.25rem) {
+      .section-1  .left{
+      height: 100vh;
+      flex: 0 0 60%;} }
 
     @media only screen and (max-width: 414px) {
-      .section-1  .right,
       .section-1  .left{
-      height: auto;} }
+      height: 100vh;
+      flex: 0 0 60%;} }
 
       @media only screen and (max-width: 375px) {
-       .section-1  .right,
       .section-1  .left {
-      height: auto;} }
+      height: 100vh;
+      flex: 0 0 60%;} }
 
       @media only screen and (max-width: 20rem) {
-        .section-1  .right,
+
        .section-1  .left {
-       height: auto;} }
+       height: auto;
+       flex: 0 0 60%;} }
+
+       @media only screen and (max-width: 414px) {
+        .section-1  .right{
+        height: 100vh;
+        flex: 0 0 40%;} }
+  
+        @media only screen and (max-width: 375px) {
+         .section-1  .right{
+        height: 100vh;
+        flex: 0 0 40%;} }
+  
+        @media only screen and (max-width: 20rem) {
+          .section-1  .right {
+         height: 100vh;
+         flex: 0 0 40%;} }
 
 
 
@@ -452,19 +517,19 @@ button {
 
   @media only screen and (max-width: 375px) {
 
-    .img-boss  {
-      width: 12rem;
-      height: 14rem;} }
+  .img-boss  {
+    width: 12rem;
+    height: 14rem;} }
 
-      @media only screen and (max-width: 414px) {
-        .owner,
-        .owner-words {
+    @media only screen and (max-width: 414px) {
+      .owner,
+      .owner-words {
       flex:1} }
-      
-        @media only screen and (max-width: 375px) {
-          .owner,
-          .owner-words  {
-            flex: 1;} }
+    
+    @media only screen and (max-width: 375px) {
+      .owner,
+      .owner-words  {
+      flex: 1;} }
 
 .owner-words {
   flex: 0 0 80%;
@@ -513,20 +578,20 @@ button {
 }
 @media only screen and (max-width: 414px) {
   .section-4 {
-    height: 100vh;} }
+    height: auto;} }
 
   @media only screen and (max-width: 375px) {
 
     .section-4  {
-      height: 100vh;} }
+      height: auto;} }
 @media only screen and (max-width: 20em) {
   .section-1{
-    height: 100vh;} }
+    height: auto;} }
 
 
 .how {
   flex: 0 0 10%;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,16 +599,15 @@ button {
 }
 @media only screen and (max-width: 414px) {
   .how {
-    flex: 1;} }
+    flex: 0 0 40%;} }
 
   @media only screen and (max-width: 375px) {
-
     .how  {
-      flex: 1;} }
+      flex: 0 0 40%;} }
 
 .how h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size:4rem;
+  font-size:6rem;
   font-weight:500;
   line-height: 1.2;
   letter-spacing: 2px;
@@ -561,12 +625,12 @@ button {
 }
 @media only screen and (max-width: 414px) {
   .websites {
-    flex: 1;} }
+    flex: 0 0 40%;} }
 
   @media only screen and (max-width: 375px) {
 
     .websites  {
-      flex: 1;} }
+      flex: 0 0 40%;} }
 
 .web-1 ,
 .web-2{
@@ -643,13 +707,16 @@ button {
 }
 @media only screen and (max-width: 414px) {
   .last-btn {
-    flex: 1;
-    margin-top:0rem } }
+    flex: 0 0 20%;
+    padding-bottom: 4rem;
+    margin-top:0rem; 
+} }
 
   @media only screen and (max-width: 375px) {
     .last-btn   {
-      flex: 1;
-      margin-top:0rem } }
+      flex: 0 0 20%;
+      padding-bottom: 4rem;
+      margin-top:0rem; } }
 
 /*----------------------------------------------------------------*/
 
@@ -691,16 +758,17 @@ button {
   @media only screen and (max-width: 414px) {
     .tools {
       display: flex;
-      flex:0 0 40%;
+      flex:0 0 60%;
       flex-direction: column;
-      height: 100vh;} }
+      height: 50vh;
+  } }
   
     @media only screen and (max-width: 375px) {
       .tools   {
         display: flex;
         flex:0 0 40%;
         flex-direction: column;
-        height: 100vh;} }
+        height: 50vh;} }
 .tool-1,
 .tool-2,
 .tool-3,
@@ -718,8 +786,8 @@ button {
 
 @media only screen and (max-width: 414px) {
 .icon-box-x {
-  width: 3rem;
-  height: 3rem;} }
+  width: 4rem;
+  height: 4rem;} }
 
   @media only screen and (max-width: 375px) {
   .icon-box-x  {
@@ -785,7 +853,8 @@ button {
     display: flex;
     flex:0 0 40%;
     flex-direction: column;
-    height: 100vh;} }
+    height: auto;
+  } }
 
   @media only screen and (max-width: 375px) {
     .theme  {
@@ -841,10 +910,23 @@ button {
   align-items:center;
   padding: 0;
 }
+@media only screen and (max-width: 414px) {
+  .section-6 button  { 
+    padding:2rem 4rem;
+
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .section-6 button  { 
+      padding:2rem 4rem;
+  
+      }
+    }
 
 @media only screen and (max-width: 24em) {
   .section-6 button  { 
-    padding:2rem 6rem;
+    padding:2rem 4rem;
 
     }
   }
@@ -870,6 +952,20 @@ button {
   align-content: space-around;
   padding: 80px 0px;
 }
+@media only screen and (max-width: 414px) {
+  .section-7 { 
+    height: auto;
+    
+
+    }
+  }
+
+  @media only screen and (max-width: 20em) {
+    .section-7 { 
+      padding:2rem 4rem;
+  
+      }
+    }
 
 .section-7 button{
   background-color: var(--color-primary-white);
@@ -975,7 +1071,7 @@ button {
     justify-content:space-between;
     text-align: center;
     max-width:410px;
-    padding: 4px;
+    padding: 0px 15px;
 } }
 
   @media only screen and (max-width: 375px) {
@@ -987,7 +1083,7 @@ button {
       justify-content:space-between;
       text-align: center;
       max-width:370px;
-      padding: 4px;} }
+      padding: 0px 10px;} }
 
 .nav__link-f {
   text-decoration: none;
